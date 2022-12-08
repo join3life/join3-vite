@@ -1,7 +1,9 @@
-import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const UserProfile = () => {
-  return <div>UserProfile</div>
+  const { id } = useParams()
+
+  return <div className="text-red-500">user id: {id}</div>
 }
 
 export default UserProfile
