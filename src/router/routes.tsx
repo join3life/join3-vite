@@ -1,8 +1,8 @@
 import { Navigate, RouteObject } from 'react-router-dom'
 
 import Home from '@/pages/Home'
-import About from '@/pages/About'
-import Profile from '@/pages/Profile'
+import UserProfile from '@/pages/UserProfile'
+import OrganizationProfile from '@/pages/OrganizationProfile'
 import NotFound from '@/pages/NotFound'
 
 const routes = [
@@ -12,17 +12,15 @@ const routes = [
   },
   {
     path: 'home',
-    element: <Home />,
-    children: [
-      {
-        path: 'about',
-        element: <About />
-      },
-      {
-        path: 'profile',
-        element: <Profile />
-      }
-    ]
+    element: <Home />
+  },
+  {
+    path: 'user/:id',
+    element: <UserProfile />
+  },
+  {
+    path: 'profile/:id',
+    element: <OrganizationProfile />
   },
   {
     path: '*',

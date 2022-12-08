@@ -1,6 +1,6 @@
 {
-  "name": "yu-react-template",
-  "private": true,
+  "name": "join3",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
